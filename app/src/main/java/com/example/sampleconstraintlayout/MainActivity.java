@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                         Bundle b = new Bundle();
                         b.putString("a", nama.trim());
                         b.putString("b", password.trim());
-                        Intent i = new Intent(getApplicationContext(), ActivityHasil.class);
+                        Intent i = new Intent(getApplicationContext(), Home_Activity.class);
                         i.putExtras(b);
                         startActivity(i);
                     } else {
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.mnDaftar)
         {
-            Intent i = new Intent(getApplicationContext(), DaftarActivity.class);
+            Intent i = new Intent(getApplicationContext(), ActivityBaru.class);
             startActivity(i);
         }
         return super.onOptionsItemSelected(item);
